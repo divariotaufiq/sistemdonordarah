@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pendaftaran Donor Darah</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Form Pendaftaran Donor Darah</h2>
+    <form action="create.php" method="POST">
+      <label>Nama:</label>
+      <input type="text" name="nama" required />
+
+      <label>Alamat:</label>
+      <textarea name="alamat" required></textarea>
+
+      <label>Tempat Tanggal Lahir:</label>
+      <input type="date" name="tempat_tanggal_lahir" required />
+
+      <label>Golongan Darah:</label>
+      <select name="golongan_darah">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="AB">AB</option>
+        <option value="O">O</option>
+      </select>
+
+      <label>Nomor HP:</label>
+      <input type="text" name="nomor_hp" required />
+
+      <button type="submit">Daftar</button>
+    </form>
+  </body>
+</html>
